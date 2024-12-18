@@ -12,7 +12,7 @@ class TaskController {
             }
 
             // Call the service to insert data into the database
-            const result = await  createtaskservice.createtask(taskData)
+            const result = await createtaskservice.createTask(taskData)
 
             // Send success response
             return res.status(201).json({
